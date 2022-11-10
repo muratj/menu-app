@@ -1,0 +1,33 @@
+GET http://localhost:7050/api/menu/employees
+
+###
+
+GET http://localhost:7050/api/menu/items/2
+
+###
+
+POST http://localhost:7050/api/menu/items
+content-type: application/json
+
+{
+  "name": "Salad",
+  "price": 499,
+  "description": "Fresh",
+  "image": "https://images.ctfassets.net/23aumh6u8s0i/5pnNAeu0kev0P5Neh9W0jj/5b62440be149d0c1a9cb84a255662205/whatabyte_salad-sm.png"
+}
+
+###
+
+PUT http://localhost:7050/api/menu/items/2
+content-type: application/json
+
+{
+  "name": "Spicy Pizza",
+  "price": 599,
+  "description": "Blazing Good",
+  "image": "https://images.ctfassets.net/23aumh6u8s0i/2x1D2KeepKoZlsUq0SEsOu/bee61947ed648848e99c71ce22563849/whatabyte_pizza-sm.png"
+}
+
+###
+
+DELETE http://localhost:7050/api/menu/items/1668042076992
